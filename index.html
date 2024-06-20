@@ -17,17 +17,19 @@
 <body>
   <div class="wrapper">
     <header class="header">
-
-      <figure class="header__hand">
-        <img class="header-image__hand" src="assets/Hand.avif" alt="">
-        <img class="image-overlay" src="assets/Logo.svg" alt="">
-      </figure>
-      <figure class="header-image__seed">
-        <img class="image-overlay image-overlay-big" src="assets/seedling.svg" alt="">
-      </figure>
-      <figure class="header-image__dig">
-        <img class="image-overlay image-overlay-big" src="assets/dig.svg" alt="">
-      </figure>
+      <section class="header-hero">
+        <figure class="header-hero__image">
+          <img class="header-logo" src="assets/Logo.svg" alt="">
+        </figure>
+        <section class="header-hero-boxes">
+          <figure class="header-hero-boxes__seedling">
+            <img src="assets/seedling.svg" alt="">
+          </figure>
+          <figure class="header-hero-boxes__dig">
+            <img src="assets/dig.svg" alt="">
+          </figure>
+        </section>
+      </section>
 
       <figure class="header-burger">
         <img class="header-burger__image" src="assets/burger.svg" alt="">
@@ -51,10 +53,10 @@
           <p class="main-intro-content__text">
             Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc
             consectetur neque. Vel amet netus amet eu elit.</p>
-          <a class="main-intro-content-button" href="">SÅ-TIPS</a>
+          <a class="main-intro-content__button big-button" href="">SÅ-TIPS</a>
         </section>
-        <figure class="image-round main-intro-img">
-          <img class="image-overlay" src="assets/Vectorseedpackage.svg" alt="">
+        <figure class="round-image">
+          <img class="" src="assets/Vectorseedpackage.svg" alt="">
         </figure>
       </article>
 
@@ -64,8 +66,7 @@
       <section class="main-cards">
         <section class="main-cards-card">
           <figure class="main-cards-card__images">
-            <img src="assets/Gurka.avif" alt="">
-            <img class="image-overlay" src="assets/plant.svg" alt="">
+            <img class="image-overlay image-overlay-card" src="assets/plant.svg" alt="">
           </figure>
           <section class="main-cards-card-info">
             <h3 class="main-cards-card-info__header">Gurka</h3>
@@ -79,8 +80,7 @@
         </section>
         <section class="main-cards-card">
           <figure class="main-cards-card__images">
-            <img src="assets/Tomater.avif" alt="">
-            <img class="image-overlay" src="assets/plant.svg" alt="">
+            <img class="image-overlay image-overlay-card" src="assets/plant.svg" alt="">
           </figure>
           <section class="main-cards-card-info">
             <h3 class="main-cards-card-info__header">Tomat</h3>
@@ -94,8 +94,7 @@
         </section>
         <section class="main-cards-card">
           <figure class="main-cards-card__images">
-            <img src="assets/Tomat.avif" alt="">
-            <img class="image-overlay" src="assets/plant.svg" alt="">
+            <img class="image-overlay image-overlay-card" src="assets/plant.svg" alt="">
           </figure>
           <section class="main-cards-card-info">
             <h3 class="main-cards-card-info__header">Tomat</h3>
@@ -109,8 +108,7 @@
         </section>
         <section class="main-cards-card">
           <figure class="main-cards-card__images">
-            <img src="assets/Sockerärtor.avif" alt="">
-            <img class="image-overlay" src="assets/plant.svg" alt="">
+            <img class="image-overlay image-overlay-card" src="assets/plant.svg" alt="">
           </figure>
           <section class="main-cards-card-info">
             <h3 class="main-cards-card-info__header">Sockerärtor</h3>
@@ -124,8 +122,7 @@
         </section>
         <section class="main-cards-card">
           <figure class="main-cards-card__images">
-            <img src="assets/Majrova.avif" alt="">
-            <img class="image-overlay" src="assets/plant.svg" alt="">
+            <img class="image-overlay image-overlay-card" src="assets/plant.svg" alt="">
           </figure>
           <section class="main-cards-card-info">
             <h3 class="main-cards-card-info__header">Majrova</h3>
@@ -139,8 +136,7 @@
         </section>
         <section class="main-cards-card">
           <figure class="main-cards-card__images">
-            <img src="assets/squash.avif" alt="">
-            <img class="image-overlay" src="assets/plant.svg" alt="">
+            <img class="image-overlay image-overlay-card" src="assets/plant.svg" alt="">
           </figure>
           <section class="main-cards-card-info">
             <h3 class="main-cards-card-info__header">Squash</h3>
@@ -152,11 +148,11 @@
             </div>
           </section>
         </section>
-        <a class="main-cards__button" href="">Visa fler</a>
+        <a class="main-cards__button big-button" href="">Visa fler</a>
       </section>
 
       <article class="main-history">
-        <figure class="main-history-image image-round">
+        <figure class="round-image">
           <img class="image-overlay" src="assets/plant.svg" alt="">
         </figure>
         <section class="main-history-content">
@@ -165,7 +161,7 @@
           <p class="main-history-content__text">Lorem ipsum dolor sit amet consectetur.
             Sit venenatis arcu nunc consectetur neque.
             Vel amet netus amet euelit.</p>
-          <a class="main-history-content__button" href="">Planterade plantor</a>
+          <a class="main-history-content__button big-button" href="">Planterade plantor</a>
         </section>
       </article>
     </main>
@@ -173,16 +169,16 @@
     <footer class="footer">
       <section class="footer-contact">
         <figure class="footer-contact__logo">
-          <img class="image-overlay" src="assets/Logo.svg" alt="">
+          <img src="assets/Logo.svg" alt="">
         </figure>
         <section class="footer-contact-info">
           <h2 class="footer-contact-info__header">Vi hörs!</h2>
           <section class="footer-contact-info-content">
-            <div class="footer-contact-info__phone">
+            <div class="footer-contact-info__icon footer-contact-info__phone">
               <img src="assets/phone.svg" alt="">
               <p>0701-234567</p>
             </div>
-            <div class="footer-contact-info__mail">
+            <div class="footer-contact-info__icon footer-contact-info__mail">
               <p>mail@mail.se</p>
               <img src="assets/envelope.svg" alt="">
             </div>
