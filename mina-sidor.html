@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mina Sidor</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header mina-sidor-header">
+      <section class="header-hero">
+        <figure class="header-hero__image mina-sidor-header-hero__image">
+          <img class="header-logo" src="assets/Logo.svg" alt="">
+        </figure>
+        <h1 class="header-hero__header">Mina sidor</h1>
+      </section>
+
+      <figure class="header-burger">
+        <img class="header-burger__image" src="assets/burger.svg" alt="">
+      </figure>
+
+      <nav class="header-nav">
+        <a href="index.html">PLANER</a>
+        <a href="">HISTORIK</a>
+        <a href="">TIPS</a>
+        <a href="">LOGGA UT</a>
+      </nav>
+
+    </header>
+
+    <main class="main">
+
+      <h2 class="main-header mina-sidor-main-header">Lägg till ny planering</h2>
+
+      <form class="main-form">
+        <label for="planta">Planta:</label>
+        <input type="text" id="planta" name="planta" value="">
+        <label for="datum">Datum:</label>
+        <input type="text" id="datum" name="datum" value="">
+        <input class="big-button" type="submit" value="LÄGG TILL">
+      </form>
+
+
+      <section class="main-cards mina-sidor-main-card__upper">
+        <h3 class="main-cards-header">Dina planerade planteringar:</h3>
+        <section class="main-cards-card">
+          <figure class="main-cards-card-frame main-cards-card-frame__mina-sidor">
+            <img class="main-cards-card-frame__image" src="assets/plant.svg" alt="">
+          </figure>
+          <section class="main-cards-card-info">
+            <h3 class="main-cards-card-info__header">Gurka</h3>
+            <p class="main-cards-card-info__date">15 april 2024</p>
+            <p class="main-cards-card-info__name">Rico Coolio</p>
+            <div class="main-cards-card-info__button">
+              <img class="main-cards-card-info__button__mobile" src="assets/garbage.svg" alt="">
+              <a class="main-cards-card-info__button__desktop" href="">TA BORT</a>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section class="main-cards">
+        <h3 class="main-cards-header">Dina planterade planteringar:</h3>
+        <section class="main-cards-card">
+          <figure class="main-cards-card-frame main-cards-card-frame__mina-sidor">
+            <img class="main-cards-card-frame__image" src="assets/plant.svg" alt="">
+          </figure>
+          <section class="main-cards-card-info">
+            <h3 class="main-cards-card-info__header">Gurka</h3>
+            <p class="main-cards-card-info__date">15 april 2024</p>
+            <p class="main-cards-card-info__name">Rico Coolio</p>
+            <div class="main-cards-card-info__button">
+              <img class="main-cards-card-info__button__mobile" src="assets/garbage.svg" alt="">
+              <a class="main-cards-card-info__button__desktop" href="">TA BORT</a>
+            </div>
+          </section>
+        </section>
+
+        <section class="main-cards-card">
+          <figure class="main-cards-card-frame main-cards-card-frame__mina-sidor">
+            <img class="main-cards-card-frame__image" src="assets/plant.svg" alt="">
+          </figure>
+          <section class="main-cards-card-info">
+            <h3 class="main-cards-card-info__header">Gurka</h3>
+            <p class="main-cards-card-info__date">15 april 2024</p>
+            <p class="main-cards-card-info__name">Rico Coolio</p>
+            <div class="main-cards-card-info__button">
+              <img class="main-cards-card-info__button__mobile" src="assets/garbage.svg" alt="">
+              <a class="main-cards-card-info__button__desktop" href="">TA BORT</a>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer mina-sidor-footer">
+      <section class="footer-gallery">
+        <figure class="footer-gallery-image">
+          <img src="assets/page2-1.avif" alt="">
+        </figure>
+        <figure class="footer-gallery-image">
+          <img src="assets/page2-2.avif" alt="">
+        </figure>
+        <figure class="footer-gallery-image">
+          <img src="assets/page2-3.avif" alt="">
+        </figure>
+        <figure class="footer-gallery-image">
+          <img src="assets/page2-4.avif" alt="">
+        </figure>
+      </section>
+
+      <a class="footer-nav" href="">Till toppen av sidan</a>
+
+    </footer>
+  </div>
+
+  <script>
+    document.querySelector('.header-burger__image')
+      .addEventListener('click', (e) => {
+        document.querySelector('.header-nav').classList.toggle('open')
+      })
+
+    function toggleClassOnResize() {
+      if (window.innerWidth >= 750) {
+        document.querySelector('.header-nav').classList.remove('open');
+      }
+    }
+    toggleClassOnResize();
+    window.addEventListener('resize', toggleClassOnResize);
+  </script>
+</body>
+
+</html>
